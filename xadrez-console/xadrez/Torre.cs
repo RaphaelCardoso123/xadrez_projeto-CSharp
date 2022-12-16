@@ -75,7 +75,6 @@ namespace xadrez
             }
 
             return mat;
-
         }
 
     }

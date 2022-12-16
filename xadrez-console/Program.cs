@@ -41,7 +41,6 @@ namespace xadrez_console
             }
 
             Console.ReadLine();
-
         }
     }
 }
