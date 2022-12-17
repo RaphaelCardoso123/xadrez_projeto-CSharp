@@ -75,6 +75,13 @@ namespace xadrez
             }
         }
 
+        /* aula177
+        public void colocarNovaPeca(char coluna, int linha, Peca peca)
+        {
+            tab.colocarPeca(peca, new PosicaoXadrez(coluna, linha).toPosicao());
+            pecas.Add(peca);
+        }
+        */
 
         private void colocarPecas()
         {
