@@ -1,4 +1,4 @@
-﻿using System;
+﻿using System.Collections.Generic;
 using tabuleiro;
 
 namespace xadrez
@@ -10,6 +10,8 @@ namespace xadrez
         public int turno { get; private set; }
         public Cor jogadorAtual { get; private set; }
         public bool terminada { get; private set; }
+        //private HashSet<Peca> pecas;//*aula177
+        //private HashSet<Peca> capturadas;//*aula177
 
         public PartidaDeXadrez()
         {
@@ -17,6 +19,8 @@ namespace xadrez
             turno = 1;
             jogadorAtual = Cor.Branca;
             terminada = false;
+            //pecas = new HashSet<Peca>();//*aula177
+            //capturadas = new HashSet<Peca>();//*aula177
             colocarPecas();
         }
 
@@ -70,6 +74,7 @@ namespace xadrez
                 jogadorAtual = Cor.Branca;
             }
         }
+
 
         private void colocarPecas()
         {
