@@ -1,11 +1,11 @@
-﻿using System;
-using tabuleiro;
+﻿using System;// aula177
+using tabuleiro;// aula177
 
-namespace xadrez
+namespace xadrez// aula177
 {
-    internal class HashSet<T>
+    internal class HashSet<T>// aula177
     {
-        internal void Add(Peca peca)
+        internal void Add(Peca peca)// aula177
         {
             
         }
