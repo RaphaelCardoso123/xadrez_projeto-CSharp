@@ -30,6 +30,10 @@ namespace xadrez
             p.incrementarQteMovimentos();
             Peca pecaCapturada = tab.retirarPeca(destino);
             tab.colocarPeca(p, destino);
+            if  (pecaCapturada != null)// aula177
+            {
+                capturadas.Add(pecaCapturada);// aula177
+            }
         }
 
         public void realizaJogada(Posicao origem, Posicao destino)
