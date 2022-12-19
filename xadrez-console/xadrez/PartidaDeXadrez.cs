@@ -85,19 +85,19 @@ namespace xadrez
 
         private void colocarPecas()
         {
-            colocarNovaPeca('c', 1, new Torre(tab, Cor.Branca));
-            colocarNovaPeca('c', 2, new Torre(tab, Cor.Branca));
-            colocarNovaPeca('d', 2, new Torre(tab, Cor.Branca));
-            colocarNovaPeca('e', 2, new Torre(tab, Cor.Branca));
-            colocarNovaPeca('e', 1, new Torre(tab, Cor.Branca));
-            colocarNovaPeca('d', 1, new Rei(tab, Cor.Branca));
+            colocarNovaPeca('c', 1, new Torre(tab, Cor.Branca));// aula177
+            colocarNovaPeca('c', 2, new Torre(tab, Cor.Branca));// aula177
+            colocarNovaPeca('d', 2, new Torre(tab, Cor.Branca));// aula177
+            colocarNovaPeca('e', 2, new Torre(tab, Cor.Branca));// aula177
+            colocarNovaPeca('e', 1, new Torre(tab, Cor.Branca));// aula177
+            colocarNovaPeca('d', 1, new Rei(tab, Cor.Branca));// aula177
 
-            colocarNovaPeca('c', 7, new Torre(tab, Cor.Preta));
-            colocarNovaPeca('c', 8, new Torre(tab, Cor.Preta));
-            colocarNovaPeca('d', 7, new Torre(tab, Cor.Preta));
-            colocarNovaPeca('e', 7, new Torre(tab, Cor.Preta));
-            colocarNovaPeca('e', 8, new Torre(tab, Cor.Preta));
-            colocarNovaPeca('d', 8, new Rei(tab, Cor.Preta));
+            colocarNovaPeca('c', 7, new Torre(tab, Cor.Preta));// aula177
+            colocarNovaPeca('c', 8, new Torre(tab, Cor.Preta));// aula177
+            colocarNovaPeca('d', 7, new Torre(tab, Cor.Preta));// aula177
+            colocarNovaPeca('e', 7, new Torre(tab, Cor.Preta));// aula177
+            colocarNovaPeca('e', 8, new Torre(tab, Cor.Preta));// aula177
+            colocarNovaPeca('d', 8, new Rei(tab, Cor.Preta));// aula177
 
             /*
             tab.colocarPeca(new Torre(tab, Cor.Branca), new PosicaoXadrez('c', 1).toPosicao());
