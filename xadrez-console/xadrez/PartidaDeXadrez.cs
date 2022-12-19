@@ -11,8 +11,8 @@ namespace xadrez
         public int turno { get; private set; }
         public Cor jogadorAtual { get; private set; }
         public bool terminada { get; private set; }
-        private HashSet<Peca> pecas;//*aula177
-        private HashSet<Peca> capturadas;//*aula177
+        //private HashSet<Peca> pecas;//*aula177
+        //private HashSet<Peca> capturadas;//*aula177
 
         public PartidaDeXadrez()
         {
@@ -20,8 +20,8 @@ namespace xadrez
             turno = 1;
             jogadorAtual = Cor.Branca;
             terminada = false;
-            pecas = new HashSet<Peca>();//*aula177
-            capturadas = new HashSet<Peca>();//*aula177
+            //pecas = new HashSet<Peca>();//*aula177
+            //capturadas = new HashSet<Peca>();//*aula177
             colocarPecas();
         }
 
@@ -31,10 +31,10 @@ namespace xadrez
             p.incrementarQteMovimentos();
             Peca pecaCapturada = tab.retirarPeca(destino);
             tab.colocarPeca(p, destino);
-            if  (pecaCapturada != null)// aula177
-            {
-                capturadas.Add(pecaCapturada);// aula177
-            }
+           // if  (pecaCapturada != null)// aula177
+           // {
+           //     capturadas.Add(pecaCapturada);// aula177
+           //}
         }
 
         public void realizaJogada(Posicao origem, Posicao destino)
@@ -93,7 +93,8 @@ namespace xadrez
                 return aux;// aula177
             }
         }
-
+        */
+        /*
         public HashSet<Peca> pecasEmJogo(Cor cor)// aula177
         {
             HashSet<Peca> aux = new HashSet<Peca>();// aula177
@@ -106,8 +107,8 @@ namespace xadrez
                 aux.ExceptWith(pecasCapturadas(cor));// aula177
                 return aux;// aula177
             }
-
-        // aula177
+        */
+        /*
         public void colocarNovaPeca(char coluna, int linha, Peca peca)// aula177
         {
             tab.colocarPeca(peca, new PosicaoXadrez(coluna, linha).toPosicao());// aula177
