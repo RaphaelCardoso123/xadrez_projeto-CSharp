@@ -10,8 +10,8 @@ namespace xadrez
         public int turno { get; private set; }
         public Cor jogadorAtual { get; private set; }
         public bool terminada { get; private set; }
-        //private HashSet<Peca> pecas;//*aula177
-        //private HashSet<Peca> capturadas;//*aula177
+        private HashSet<Peca> pecas;//*aula177
+        private HashSet<Peca> capturadas;//*aula177
 
         public PartidaDeXadrez()
         {
@@ -19,8 +19,8 @@ namespace xadrez
             turno = 1;
             jogadorAtual = Cor.Branca;
             terminada = false;
-            //pecas = new HashSet<Peca>();//*aula177
-            //capturadas = new HashSet<Peca>();//*aula177
+            pecas = new HashSet<Peca>();//*aula177
+            capturadas = new HashSet<Peca>();//*aula177
             colocarPecas();
         }
 
@@ -75,16 +75,31 @@ namespace xadrez
             }
         }
 
-        /* aula177
+        // aula177
         public void colocarNovaPeca(char coluna, int linha, Peca peca)
         {
             tab.colocarPeca(peca, new PosicaoXadrez(coluna, linha).toPosicao());
             pecas.Add(peca);
         }
-        */
+        
 
         private void colocarPecas()
         {
+            colocarNovaPeca('c', 1, new Torre(tab, Cor.Branca));
+            colocarNovaPeca('c', 2, new Torre(tab, Cor.Branca));
+            colocarNovaPeca('d', 2, new Torre(tab, Cor.Branca));
+            colocarNovaPeca('e', 2, new Torre(tab, Cor.Branca));
+            colocarNovaPeca('e', 1, new Torre(tab, Cor.Branca));
+            colocarNovaPeca('d', 1, new Rei(tab, Cor.Branca));
+
+            colocarNovaPeca('c', 7, new Torre(tab, Cor.Preta));
+            colocarNovaPeca('c', 8, new Torre(tab, Cor.Preta));
+            colocarNovaPeca('d', 7, new Torre(tab, Cor.Preta));
+            colocarNovaPeca('e', 7, new Torre(tab, Cor.Preta));
+            colocarNovaPeca('e', 8, new Torre(tab, Cor.Preta));
+            colocarNovaPeca('d', 8, new Rei(tab, Cor.Preta));
+
+            /*
             tab.colocarPeca(new Torre(tab, Cor.Branca), new PosicaoXadrez('c', 1).toPosicao());
             tab.colocarPeca(new Torre(tab, Cor.Branca), new PosicaoXadrez('c', 2).toPosicao());
             tab.colocarPeca(new Torre(tab, Cor.Branca), new PosicaoXadrez('d', 2).toPosicao());
@@ -98,6 +113,7 @@ namespace xadrez
             tab.colocarPeca(new Torre(tab, Cor.Preta), new PosicaoXadrez('e', 7).toPosicao());
             tab.colocarPeca(new Torre(tab, Cor.Preta), new PosicaoXadrez('e', 8).toPosicao());
             tab.colocarPeca(new Rei(tab, Cor.Preta), new PosicaoXadrez('d', 8).toPosicao());
+            */
         }
     }
 }
