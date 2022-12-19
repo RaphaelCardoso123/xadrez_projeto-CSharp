@@ -80,7 +80,7 @@ namespace xadrez
             }
         }
 
-        
+        /*
         public HashSet<Peca> pecasCapturadas(Cor cor)// aula177
         {
             HashSet<Peca> aux = new HashSet<Peca>();// aula177
@@ -108,15 +108,16 @@ namespace xadrez
             }
 
         // aula177
-        public void colocarNovaPeca(char coluna, int linha, Peca peca)
+        public void colocarNovaPeca(char coluna, int linha, Peca peca)// aula177
         {
-            tab.colocarPeca(peca, new PosicaoXadrez(coluna, linha).toPosicao());
-            pecas.Add(peca);
+            tab.colocarPeca(peca, new PosicaoXadrez(coluna, linha).toPosicao());// aula177
+            pecas.Add(peca);// aula177
         }
-        
+        */
 
         private void colocarPecas()
         {
+            /*
             colocarNovaPeca('c', 1, new Torre(tab, Cor.Branca));// aula177
             colocarNovaPeca('c', 2, new Torre(tab, Cor.Branca));// aula177
             colocarNovaPeca('d', 2, new Torre(tab, Cor.Branca));// aula177
@@ -130,8 +131,9 @@ namespace xadrez
             colocarNovaPeca('e', 7, new Torre(tab, Cor.Preta));// aula177
             colocarNovaPeca('e', 8, new Torre(tab, Cor.Preta));// aula177
             colocarNovaPeca('d', 8, new Rei(tab, Cor.Preta));// aula177
+            */
 
-            /*
+            
             tab.colocarPeca(new Torre(tab, Cor.Branca), new PosicaoXadrez('c', 1).toPosicao());
             tab.colocarPeca(new Torre(tab, Cor.Branca), new PosicaoXadrez('c', 2).toPosicao());
             tab.colocarPeca(new Torre(tab, Cor.Branca), new PosicaoXadrez('d', 2).toPosicao());
@@ -145,7 +147,7 @@ namespace xadrez
             tab.colocarPeca(new Torre(tab, Cor.Preta), new PosicaoXadrez('e', 7).toPosicao());
             tab.colocarPeca(new Torre(tab, Cor.Preta), new PosicaoXadrez('e', 8).toPosicao());
             tab.colocarPeca(new Rei(tab, Cor.Preta), new PosicaoXadrez('d', 8).toPosicao());
-            */
+            
         }
     }
 }
