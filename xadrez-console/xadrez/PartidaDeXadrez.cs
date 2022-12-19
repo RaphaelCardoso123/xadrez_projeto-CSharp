@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using tabuleiro;
+using System;
 
 namespace xadrez
 {
@@ -78,6 +79,33 @@ namespace xadrez
                 jogadorAtual = Cor.Branca;
             }
         }
+
+        
+        public HashSet<Peca> pecasCapturadas(Cor cor)// aula177
+        {
+            HashSet<Peca> aux = new HashSet<Peca>();// aula177
+            foreach (Peca x in capturadas)// aula177
+            {
+                if (x.cor == cor)// aula177
+                {
+                    aux.Add(x);// aula177
+                }
+                return aux;// aula177
+            }
+        }
+
+        public HashSet<Peca> pecasEmJogo(Cor cor)// aula177
+        {
+            HashSet<Peca> aux = new HashSet<Peca>();// aula177
+            foreach (Peca x in pecas)// aula177
+            {
+                if (x.cor == cor)// aula177
+                {
+                    aux.Add(x);// aula177
+                }
+                aux.ExceptWith(pecasCapturadas(cor));// aula177
+                return aux;// aula177
+            }
 
         // aula177
         public void colocarNovaPeca(char coluna, int linha, Peca peca)
