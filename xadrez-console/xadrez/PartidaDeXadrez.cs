@@ -90,11 +90,11 @@ namespace xadrez
                 {
                     aux.Add(x);// aula177
                 }
-                return aux;// aula177
             }
+            return aux;// aula177
         }
-        
-        
+
+
         public HashSet<Peca> pecasEmJogo(Cor cor)// aula177
         {
             HashSet<Peca> aux = new HashSet<Peca>();// aula177
@@ -104,10 +104,10 @@ namespace xadrez
                 {
                     aux.Add(x);// aula177
                 }
-                aux.ExceptWith(pecasCapturadas(cor));// aula177
-                return aux;// aula177
             }
-        
+            aux.ExceptWith(pecasCapturadas(cor));// aula177
+            return aux;// aula177
+        }
         
         public void colocarNovaPeca(char coluna, int linha, Peca peca)// aula177
         {
