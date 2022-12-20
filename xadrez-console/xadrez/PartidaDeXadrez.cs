@@ -80,7 +80,7 @@ namespace xadrez
             }
         }
 
-        
+        /*
         public HashSet<Peca> pecasCapturadas(Cor cor)// aula177
         {
             HashSet<Peca> aux = new HashSet<Peca>();// aula177
@@ -93,8 +93,9 @@ namespace xadrez
             }
             return aux;// aula177
         }
+        */
 
-
+        /*
         public HashSet<Peca> pecasEmJogo(Cor cor)// aula177
         {
             HashSet<Peca> aux = new HashSet<Peca>();// aula177
@@ -108,7 +109,8 @@ namespace xadrez
             aux.ExceptWith(pecasCapturadas(cor));// aula177
             return aux;// aula177
         }
-        
+        */
+
         public void colocarNovaPeca(char coluna, int linha, Peca peca)// aula177
         {
             tab.colocarPeca(peca, new PosicaoXadrez(coluna, linha).toPosicao());// aula177
