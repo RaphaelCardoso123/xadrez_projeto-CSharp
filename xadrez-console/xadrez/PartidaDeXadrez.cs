@@ -11,8 +11,8 @@ namespace xadrez
         public int turno { get; private set; }
         public Cor jogadorAtual { get; private set; }
         public bool terminada { get; private set; }
-        //private HashSet<Peca> pecas;//*aula177
-        //private HashSet<Peca> capturadas;//*aula177
+        private HashSet<Peca> pecas;//*aula177
+        private HashSet<Peca> capturadas;//*aula177
 
         public PartidaDeXadrez()
         {
