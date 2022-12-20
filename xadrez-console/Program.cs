@@ -1,6 +1,7 @@
 ﻿using System;
 using tabuleiro;
 using xadrez;
+using System.Collections.Generic;
 
 namespace xadrez_console
 {
