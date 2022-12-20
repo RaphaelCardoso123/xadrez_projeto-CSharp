@@ -20,8 +20,8 @@ namespace xadrez
             turno = 1;
             jogadorAtual = Cor.Branca;
             terminada = false;
-            //pecas = new HashSet<Peca>();//*aula177
-            //capturadas = new HashSet<Peca>();//*aula177
+            pecas = new HashSet<Peca>();//*aula177
+            capturadas = new HashSet<Peca>();//*aula177
             colocarPecas();
         }
 
@@ -31,10 +31,10 @@ namespace xadrez
             p.incrementarQteMovimentos();
             Peca pecaCapturada = tab.retirarPeca(destino);
             tab.colocarPeca(p, destino);
-           // if  (pecaCapturada != null)// aula177
-           // {
-           //     capturadas.Add(pecaCapturada);// aula177
-           //}
+            if  (pecaCapturada != null)// aula177
+            {
+                capturadas.Add(pecaCapturada);// aula177
+           }
         }
 
         public void realizaJogada(Posicao origem, Posicao destino)
